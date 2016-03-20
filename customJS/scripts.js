@@ -275,8 +275,9 @@ jQuery(document).ready(function($) {
 	});
 	//////////////////This is for the newsPage 
 	$('#newsAccordion').accordion({
-      collapsible: true,
-      heightStyle: "content"
+        active: false,
+        collapsible: true,
+        heightStyle: "content"
     });
     //////////////////////////////////////Blog Post
     //////This is going to add a click event to the greenHeaders of the blog post pages 
