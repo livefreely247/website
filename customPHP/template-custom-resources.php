@@ -38,7 +38,7 @@ $page_template = woo_get_page_template();
                <section id="main">
                     <h2 class="greenHeaders">Resources</h2>
                     <div class="accordion">
-                         <h2 class="accordionHeadersGrey">Classes, Workshops &amp; Conferences</h2>
+                         <h3 class="accordionHeadersGrey">Classes, Workshops &amp; Conferences</h3>
                          <div>
                               <?php
                               /// Starting custom posts
@@ -67,7 +67,7 @@ $page_template = woo_get_page_template();
                               }
                               ?>
                          </div>
-                    <h2 class="accordionHeadersGrey">Jobs, Internships &amp; Volunteer Opportunities</h2>
+                    <h3 class="accordionHeadersGrey">Jobs, Internships &amp; Volunteer Opportunities</h3>
                         <div>
                          <?php
                          // Jobs and internships
@@ -95,7 +95,7 @@ $page_template = woo_get_page_template();
                          }
                          ?>
                         </div>
-                         <h2 class="accordionHeadersGrey">Grant &amp; Awards</h2>
+                         <h3 class="accordionHeadersGrey">Grant &amp; Awards</h3>
                         <div>
                          <?php
                               // Grant Opportunities
@@ -151,7 +151,7 @@ $page_template = woo_get_page_template();
 //                              }
 //                         ?>
 <!--                        </div>-->
-                         <h2 class="accordionHeadersGrey">Curriculum Resources</h2>
+                         <h3 class="accordionHeadersGrey">Curriculum Resources</h3>
                         <div>
                          <?php
                               // Curriculum Resources
@@ -179,7 +179,7 @@ $page_template = woo_get_page_template();
                               }
                          ?>
                         </div>
-                         <h2 class="accordionHeadersGrey">Publications &amp; Media Opportunities</h2>
+                         <h3 class="accordionHeadersGrey">Publications &amp; Media Opportunities</h3>
                          <div>
                               <?php
                               /// Starting custom posts
@@ -208,7 +208,7 @@ $page_template = woo_get_page_template();
                               }
                               ?>
                          </div>
-                         <h2 class="accordionHeadersGrey">Other Resources</h2>
+                         <h3 class="accordionHeadersGrey">Other Resources</h3>
                          <div>
                               <?php
                               /// Starting custom posts

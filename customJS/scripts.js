@@ -218,25 +218,18 @@ jQuery(document).ready(function($) {
 		$('#RCELogoSidebar').addClass('displayNone');
 	}
 	
-	//////////////////////////////////////////FAQ Page 
-	// THis is the main FAQ animation 
-	// $( '#FAQAccordion' ).accordion({
- //      collapsible: true,
- //      heightStyle: "content",
- //      active: false
- //    });
+	//////////////////////////////////////////FAQ Page
     // THis is going to animate the fa-plus and fa-minus
-    var $FAQAccordionH3 = $('#FAQAccordion h3');
-  	$('.accordionGreyHeaders').on('click', function() {
-
-  		if($FAQAccordionH3.hasClass('clicked')) {
-  			$(this).removeClass('clicked');
-  			$(this).find('span.floatRight').removeClass('fa-minus').addClass('fa-plus');
-  		} else {
-  			$(this).find('span.floatRight').removeClass('fa-plus').addClass('fa-minus');
-  			$(this).addClass('clicked');
-  		}
-	}); // end 
+    // var $FAQAccordionH3 = $('#FAQAccordion h3');
+  	// $('.accordionGreyHeaders').on('click', function() {
+  	// 	if($FAQAccordionH3.hasClass('clicked')) {
+  	// 		$(this).removeClass('clicked');
+  	// 		$(this).find('span.floatRight').removeClass('fa-minus').addClass('fa-plus');
+  	// 	} else {
+  	// 		$(this).find('span.floatRight').removeClass('fa-plus').addClass('fa-minus');
+  	// 		$(this).addClass('clicked');
+  	// 	}
+    // }); // end 
 	// This is for th FAQ page links section which shows and hides the link in each SectionUL
 	$('.FAQSectionOneUL, .FAQSectionTwoUL, .FAQSectionThreeUL, .FAQSectionFiveUL').css(
 		'display', 'none' 
@@ -273,64 +266,67 @@ jQuery(document).ready(function($) {
 			$('.FAQSectionFiveUL').slideUp('slow');
 		}
 	});
-	//////////////////This is for the newsPage 
-	$('#newsAccordion').accordion({
-        active: false,
-        collapsible: true,
-        heightStyle: "content"
-    });
-    //////////////////////////////////////Blog Post
-    //////This is going to add a click event to the greenHeaders of the blog post pages 
 
-    //////////////////////////////////////#governancePage
-    $('#governanceAccordion').accordion({
-    	collapsible: true,
-      	heightStyle: "content",
-      	active: false
 
-    }); // end governanceAccordion
-    //$('#governanceAccordion h3').on('click', function(e) {
-    	//this.animate({
-    	//	//boxShadow: '0px -1px 3px 0px rgba(0,0,0,.50)'
-    	//});
-	//}); // end click
 	// This is going to be the class that add accordion to live
-	$('.accordion').accordion({
-    	collapsible: true,
-      	heightStyle: "content",
-      	active: false
-	});
-	if (siteHerf != 'http://gpsen.org/resources/') {
-        var $accordionH3 = $('.accordion h3');
-        $('<span class="fa fa-chevron-down floatRight"></span>').appendTo($accordionH3);
-    } else if (siteHerf === 'http://gpsen.org/resources/') {
-		var $accordionH3 = $('.accordion .accordionHeadersGrey');
-		$('<span class="fa fa-chevron-down floatRight"></span>').appendTo($accordionH3);
+	function activateAccordion() {
+		$('.accordion').accordion({
+			collapsible: true,
+			heightStyle: "content",
+			active: false
+		});
+		//////////////////This is for the newsPage
+		$('#newsAccordion').accordion({
+			active: false,
+			collapsible: true,
+			heightStyle: "content"
+		});
+		//////////////////////////////////////#governancePage
+		$('#governanceAccordion').accordion({
+			collapsible: true,
+			heightStyle: "content",
+			active: false
+		}); // end governanceAccordion
 	}
-	/// THis is going to animate the span arrow of the h3's
-	$accordionH3.on('click', function() {
-		if($accordionH3.hasClass('ui-accordion-content-active')) {
-			$(this).find('span.floatRight').stop().animate({  borderSpacing: 0 }, {
-				step: function(now) {
-					$(this).css('-webkit-transform','rotate('+now+'deg)');
-					$(this).css('-moz-transform','rotate('+now+'deg)');
-					$(this).css('transform','rotate('+now+'deg)');
-				},
-				duration:'fast'
-			},'linear');
-			$accordionH3.removeClass('ui-accordion-content-active');
-		} else {
-			$(this).find('span.floatRight').stop().animate({  borderSpacing: 180 }, {
-				step: function(now) {
-					$(this).css('-webkit-transform','rotate('+now+'deg)');
-					$(this).css('-moz-transform','rotate('+now+'deg)');
-					$(this).css('transform','rotate('+now+'deg)');
-				},
-				duration:'fast'
-			},'linear');
-			$accordionH3.addClass('ui-accordion-content-active');
+	activateAccordion();
+	function addArrowsAccrdion() {
+		if (siteHerf != 'http://gpsen.org/resources/') {
+			var $accordionH3 = $('.accordion h3');
+			$('<span class="fa fa-chevron-down floatRight"></span>').appendTo($accordionH3);
+		} else if (siteHerf === 'http://gpsen.org/resources/') {
+			var $accordionH3 = $('.accordion .accordionHeadersGrey');
+			$('<span class="fa fa-chevron-down floatRight"></span>').appendTo($accordionH3);
 		}
-	}); // end $('#disabilityCategoriesPage h3').on('click'.....
+	}
+	addArrowsAccrdion();
+
+	var $accordionH2 = $('.accordion > h3');
+	$accordionH2.on('click', function() {
+            /// THis is going to animate the span arrow of the h3's
+            if($accordionH2.hasClass('ui-accordion-content-active')) {
+                $(this).find('span.floatRight').stop().animate({  borderSpacing: 0 }, {
+                    step: function(now) {
+                        $(this).css('-webkit-transform','rotate('+now+'deg)');
+                        $(this).css('-moz-transform','rotate('+now+'deg)');
+                        $(this).css('transform','rotate('+now+'deg)');
+                    },
+                    duration:'fast'
+                },'linear');
+                $accordionH2.removeClass('ui-accordion-content-active');
+            } else {
+                $(this).find('span.floatRight').stop().animate({  borderSpacing: 180 }, {
+                    step: function(now) {
+                        $(this).css('-webkit-transform','rotate('+now+'deg)');
+                        $(this).css('-moz-transform','rotate('+now+'deg)');
+                        $(this).css('transform','rotate('+now+'deg)');
+                    },
+                    duration:'fast'
+                },'linear');
+                $accordionH2.addClass('ui-accordion-content-active');
+            }
+	}); // end $accordionH2
+
+
 	/// Form pages
 	///Mail Chimp Form
 	// THis is going to be for the confirmation message a user submits Partner form as individual
