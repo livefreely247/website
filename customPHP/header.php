@@ -21,6 +21,7 @@
      <?php wp_head(); ?>
      <?php woo_head(); ?>
 
+     <!--Google analytics-->
      <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,9 +32,24 @@
           ga('send', 'pageview');
 
      </script>
+<!--     // Google Maps API-->
+     <script type="text/javascript"
+             src="http://maps.google.com/maps/api/js?key=AIzaSyAx2cypTFsOW1AHcwnBJZh9AqyxycX0VKs">
+     </script>
 </head>
 <body <?php body_class(); ?>>
 <?php woo_top(); ?>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <div id="wrapper">
 
      <div id="inner-wrapper">
@@ -61,8 +77,9 @@
                               <li><a href="https://www.youtube.com/channel/UChB7TwwnSa6brrrw-xYKeSA" target="_blank" class="youTubeIcon"></a></li>
 
                          </ul>
+                        <!--google translate-->
                          <div id="google_translate_element"></div>
-
+            
                          <script type="text/javascript">
                               function googleTranslateElementInit() {
                                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-68540774-1'}, 'google_translate_element');

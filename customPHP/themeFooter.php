@@ -16,13 +16,8 @@
 
  */
 
-
-
- global $woo_options;
-
-
-
- woo_footer_top();
+global $woo_options;
+woo_footer_top();
 
  	woo_footer_before();
 
