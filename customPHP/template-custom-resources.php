@@ -47,7 +47,7 @@ $page_template = woo_get_page_template();
                               $classesWorkshopsArgs = array(
                                    'post_type'              => 'post',
                                    'category_name'          => 'classes-workshops-and-conferences',
-                                   'order'                  => 'DESC',
+                                   'order'                  => 'ASC',
                                    'orderby'                => 'menu_order',
                                    'posts_per_page'         =>  '-1'
                               );
@@ -75,7 +75,7 @@ $page_template = woo_get_page_template();
                          $jobsArgs = array(
                               'post_type'              => 'post',
                               'category_name'          => 'jobs-internships',
-                              'order'                  => 'DESC',
+                              'order'                  => 'ASC',
                               'orderby'                => 'menu_order',
                               'posts_per_page'         =>  '-1'
                          );
@@ -103,7 +103,7 @@ $page_template = woo_get_page_template();
                               $grantArgs = array(
                                    'post_type'              => 'post',
                                    'category_name'          => 'grant-and-awards',
-                                   'order'                  => 'DESC',
+                                   'order'                  => 'ASC',
                                    'orderby'                => 'menu_order',
                                    'posts_per_page'         =>  '-1'
                               );
@@ -159,7 +159,7 @@ $page_template = woo_get_page_template();
                               $curriculumArgs = array(
                                    'post_type'              => 'post',
                                    'category_name'          => 'curriculum-resources',
-                                   'order'                  => 'DESC',
+                                   'order'                  => 'ASC',
                                    'orderby'                => 'menu_order',
                                    'posts_per_page'         =>  '-1'
                               );
@@ -188,7 +188,7 @@ $page_template = woo_get_page_template();
                               $publicationArgs = array(
                                    'post_type'              => 'post',
                                    'category_name'          => 'publications-media-opportunities',
-                                   'order'                  => 'DESC',
+                                   'order'                  => 'ASC',
                                    'orderby'                => 'menu_order',
                                    'posts_per_page'         =>  '-1'
                               );
@@ -217,7 +217,7 @@ $page_template = woo_get_page_template();
                               $otherResourcesArgs = array(
                                   'post_type'              => 'post',
                                   'category_name'          => 'other-resources',
-                                  'order'                  => 'DESC',
+                                  'order'                  => 'ASC',
                                   'orderby'                => 'menu_order',
                                   'posts_per_page'         =>  '-1'
                               );
