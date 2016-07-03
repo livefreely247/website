@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
         offset     = $sidebar.offset(),
         topPadding = 15,
         endScrollMargin = $sidebar.offset().top  + 800,
-        siteHerf = window.location.href;
+        siteHref = window.location.href;
     
     if ($window.width() >= 1100) {
     	$window.scroll(function() {
@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 	                marginTop: 0
 	            });
 	        } // end if 
-	        /// my if stament that makes the #sidebar animate to stopped offset().top
+	        /// my if statement that makes the #sidebar animate to stopped offset().top
 	        if ($window.scrollTop() >= endScrollMargin) {
 	        	$sidebar.stop().animate({
 	                marginBottom: 0
@@ -47,28 +47,28 @@ jQuery(document).ready(function($) {
     		} // end if
 
 			/// Turning off animation of side bar on load if page ===
-			if (siteHerf === 'http://gpsen.org/member-partner-registration/') {
+			if (siteHref === 'http://gpsen.org/member-partner-registration/') {
 				$sidebar.stop().animate();
 			}
-			if (siteHerf === 'http://gpsen.org/partners/') {
+			if (siteHref === 'http://gpsen.org/partners/') {
 				$sidebar.stop().animate();
 			} // end if
-			if (siteHerf === 'http://gpsen.org/donations/donate-to-greater-portland-sustainability-education-network/') {
+			if (siteHref === 'http://gpsen.org/donations/donate-to-greater-portland-sustainability-education-network/') {
 				$sidebar.stop().animate();
 			} // end if
-			if (siteHerf === 'http://gpsen.org/mailchimp-sign-up/') {
+			if (siteHref === 'http://gpsen.org/mailchimp-sign-up/') {
 				$sidebar.stop().animate();
 			} // end if
-			if (siteHerf === 'http://gpsen.org/newsletter-resources/') {
+			if (siteHref === 'http://gpsen.org/newsletter-resources/') {
 				$sidebar.stop().animate();
 			} // end if
-            if (siteHerf === 'http://gpsen.org/contact/') {
+            if (siteHref === 'http://gpsen.org/contact/') {
                 $sidebar.stop().animate();
             } // end if
-            if (siteHerf === 'http://gpsen.org/the-meaning-of-our-logo/') {
+            if (siteHref === 'http://gpsen.org/the-meaning-of-our-logo/') {
                 $sidebar.stop().animate();
             } // end if
-			if (siteHerf === 'http://gpsen.org/resources/') {
+			if (siteHref === 'http://gpsen.org/resources/') {
 				$sidebar.stop().animate();
 			} // end if
     	}); // end $window.scroll function
@@ -123,28 +123,28 @@ jQuery(document).ready(function($) {
 		    		} // end if
 
 					/// Turning off animation of side bar on load if page ===
-					if (siteHerf === 'http://gpsen.org/member-partner-registration/') {
+					if (siteHref === 'http://gpsen.org/member-partner-registration/') {
 						$sidebar.stop().animate();
 					}
-					if (siteHerf === 'http://gpsen.org/partners/') {
+					if (siteHref === 'http://gpsen.org/partners/') {
 						$sidebar.stop().animate();
 					} // end if
-					if (siteHerf === 'http://gpsen.org/donations/donate-to-greater-portland-sustainability-education-network/') {
+					if (siteHref === 'http://gpsen.org/donations/donate-to-greater-portland-sustainability-education-network/') {
 						$sidebar.stop().animate();
 					} // end if
-					if (siteHerf === 'http://gpsen.org/mailchimp-sign-up/') {
+					if (siteHref === 'http://gpsen.org/mailchimp-sign-up/') {
 						$sidebar.stop().animate();
 					} // end if
-                    if (siteHerf === 'http://gpsen.org/newsletter-resources/') {
+                    if (siteHref === 'http://gpsen.org/newsletter-resources/') {
                         $sidebar.stop().animate();
                     } // end if
-                    if (siteHerf === 'http://gpsen.org/contact/') {
+                    if (siteHref === 'http://gpsen.org/contact/') {
                         $sidebar.stop().animate();
                     } // end if
-                    if (siteHerf === 'http://gpsen.org/the-meaning-of-our-logo/') {
+                    if (siteHref === 'http://gpsen.org/the-meaning-of-our-logo/') {
                         $sidebar.stop().animate();
                     } // end if
-					if (siteHerf === 'http://gpsen.org/resources/') {
+					if (siteHref === 'http://gpsen.org/resources/') {
 						$sidebar.stop().animate();
 					} // end if
 			    }); // end $window.scroll function 
@@ -211,8 +211,8 @@ jQuery(document).ready(function($) {
   		}
 	});
 	// This is for the RCE UNU picture should only show on homePage 
-	var siteHerf = window.location.href;
-	if(siteHerf === 'http://gpsen.org/') {
+	var siteHref = window.location.href;
+	if(siteHref === 'http://gpsen.org/') {
 		$('#RCELogoSidebar').addClass('displayBlock');
 	} else {
 		$('#RCELogoSidebar').addClass('displayNone');
@@ -243,7 +243,6 @@ jQuery(document).ready(function($) {
 		}
 	});
 	$('.FAQSectionTwoLinks').on('click', function() {
-
 		if ($('.FAQSectionTwoUL').is(':hidden')) {
 			$('.FAQSectionTwoUL').slideDown('slow');
 		} else {
@@ -251,7 +250,6 @@ jQuery(document).ready(function($) {
 		}
 	});
 	$('.FAQSectionThreeLinks').on('click', function() {
-
 		if ($('.FAQSectionThreeUL').is(':hidden')) {
 			$('.FAQSectionThreeUL').slideDown('slow');
 		} else {
@@ -266,7 +264,6 @@ jQuery(document).ready(function($) {
 			$('.FAQSectionFiveUL').slideUp('slow');
 		}
 	});
-
 
 	// This is going to be the class that add accordion to live
 	function activateAccordion() {
@@ -290,11 +287,10 @@ jQuery(document).ready(function($) {
 	}
 	activateAccordion();
 	function addArrowsAccrdion() {
-		if (siteHerf != 'http://gpsen.org/resources/') {
-			var $accordionH3 = $('.accordion h3');
+		var $accordionH3 = $('.accordion .accordionHeadersGrey');
+		if (siteHref != 'http://gpsen.org/resources/') {
 			$('<span class="fa fa-chevron-down floatRight"></span>').appendTo($accordionH3);
-		} else if (siteHerf === 'http://gpsen.org/resources/') {
-			var $accordionH3 = $('.accordion .accordionHeadersGrey');
+		} else if (siteHref === 'http://gpsen.org/resources/') {
 			$('<span class="fa fa-chevron-down floatRight"></span>').appendTo($accordionH3);
 		}
 	}

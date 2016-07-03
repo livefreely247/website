@@ -34,40 +34,11 @@ $page_template = woo_get_page_template();
                <!-- #main Starts -->
 
                <?php woo_main_before(); ?>
-               <?php if ((isset( $woo_options['woo_slider_biz']) && 'true' == $woo_options['woo_slider_biz']) && (isset( $woo_options['woo_slider_biz_full'] ) && 'false' == $woo_options['woo_slider_biz_full'] ) ) { $saved = $wp_query; woo_slider_biz(); $wp_query = $saved; } ?>
+               <?php if ((isset($woo_options['woo_slider_biz']) && 'true' == $woo_options['woo_slider_biz']) && (isset( $woo_options['woo_slider_biz_full'] ) && 'false' == $woo_options['woo_slider_biz_full'] ) ) { $saved = $wp_query; woo_slider_biz(); $wp_query = $saved; } ?>
                <section id="main">
                     <h2 class="greenHeaders">Resources</h2>
                     <div class="accordion">
-                         <h3 class="accordionHeadersGrey">Classes, Workshops &amp; Conferences</h3>
-                         <div>
-                              <?php
-                              /// Starting custom posts
-                              // Publications media Opportunities
-                              // WP_Query arguments
-                              $classesWorkshopsArgs = array(
-                                   'post_type'              => 'post',
-                                   'category_name'          => 'classes-workshops-and-conferences',
-                                   'order'                  => 'ASC',
-                                   'orderby'                => 'menu_order',
-                                   'posts_per_page'         =>  '-1'
-                              );
-                              // The Query
-                              $classesWorkshopsQuery = new WP_Query($classesWorkshopsArgs);
-                              // The Loop
-                              if ($classesWorkshopsQuery->have_posts()) {
-                                   while ($classesWorkshopsQuery->have_posts()) {
-                                        $classesWorkshopsQuery->the_post();
-                                        echo '<div class="entry-content greySections addLiteMarginTop">';
-                                        echo '<div class="whiteCard">';
-                                        echo '<h3 class="blueHeaders">' . get_the_title($ID) . '</h3>';
-                                        the_content();
-                                        echo '</div>';
-                                        echo '</div>';
-                                   }
-                              }
-                              ?>
-                         </div>
-                    <h3 class="accordionHeadersGrey">Jobs, Internships &amp; Volunteer Opportunities</h3>
+                         <h3 class="accordionHeadersGrey">Jobs, Internships &amp; Volunteer Opportunities</h3>
                         <div>
                          <?php
                          // Jobs and internships
