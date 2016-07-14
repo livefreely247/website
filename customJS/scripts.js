@@ -296,10 +296,10 @@ jQuery(document).ready(function($) {
 	}
 	addArrowsAccrdion();
 
-	var $accordionH2 = $('.accordion > h3');
-	$accordionH2.on('click', function() {
+	var $accordionH3 = $('.accordion > h3');
+	$accordionH3.on('click', function() {
             /// THis is going to animate the span arrow of the h3's
-            if($accordionH2.hasClass('ui-accordion-content-active')) {
+            if($accordionH3.hasClass('ui-accordion-content-active')) {
                 $(this).find('span.floatRight').stop().animate({  borderSpacing: 0 }, {
                     step: function(now) {
                         $(this).css('-webkit-transform','rotate('+now+'deg)');
@@ -308,7 +308,7 @@ jQuery(document).ready(function($) {
                     },
                     duration:'fast'
                 },'linear');
-                $accordionH2.removeClass('ui-accordion-content-active');
+                $accordionH3.removeClass('ui-accordion-content-active');
             } else {
                 $(this).find('span.floatRight').stop().animate({  borderSpacing: 180 }, {
                     step: function(now) {
