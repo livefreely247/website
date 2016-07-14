@@ -12,46 +12,58 @@
 /*!*---This is for the donate Section----*!*/
 /*#donateSidebarButton a:hover {*/
 /*text-decoration: none; }*/
-
-/*#donateSidebarButton h3 {*/
-/*background: #009653;*/
-/*-webkit-transition: all .25s ease;*/
-/*transition: all .25s ease;*/
-/*color: #fff;*/
-/*border: none;*/
-/*padding: 1em;*/
-/*text-align: center;*/
-/*width: 100%;*/
-/*margin: 1% auto;*/
-/*font-size: 1.5em;*/
-/*border-radius: 3px;*/
-/*box-shadow: inset 0px -1px 3px 0px rgba(255, 255, 255, 0.25); }*/
-
-/*#donateSidebarButton h3:hover {*/
-/*background: #18AE6A;*/
-/*box-shadow: 0px 2px 5px 0px #aaa; }*/
-
 .GPSENSidebar {
 
 }
 .GPSENSidebar h3 {
-  /*border-bottom: none;*/
-  /*padding: .5em;*/
-  /*color: white;*/
-  /*text-align: center;*/
-  /*font-size: 1.5em;*/
-  /*width: 100%;*/
-  /*margin: 2% auto;*/
+  background: #3296CB;
+  border-bottom: none;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+  margin: 2% auto;
+  padding: 0 0 0 0;
+}
+.GPSENSidebar h3:hover {
+  background: #3296CB;
+  box-shadow: 0px 2px 5px 0px #aaa;
+}
+.GPSENSidebar h3:active {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.GPSENSidebar h3 a {
+  color: white;
+  padding: 1em;
+  display: block;
+}
+.donateSidebarButton h3 {
+  background: #009653;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  color: #fff;
+  border: none;
+  text-align: center;
+  width: 100%;
+  margin: 1% auto;
+  font-size: 1.5em;
+  border-radius: 3px;
+  box-shadow: inset 0px -1px 3px 0px rgba(255, 255, 255, 0.25);
+}
+.donateSidebarButton h3:hover {
+  background: #18AE6A;
+  box-shadow: 0px 2px 5px 0px #aaa;
 }
 /*-for the newletter section for widget---*/
-/*#largeWidgetButton h3 {*/
-/*border-bottom: none;*/
-/*padding: 1em;*/
-/*color: white;*/
-/*text-align: center;*/
-/*font-size: 1.5em;*/
-/*width: 100%;*/
-/*margin: 2% auto; }*/
+//.GPSENSidebar h3 {
+//border-bottom: none;
+//padding: 1em;
+//color: white;
+//text-align: center;
+//font-size: 1.5em;
+//width: 100%;
+//margin: 2% auto;
+//}
 
 .newsletterButton {
   background: #009653;
@@ -62,17 +74,22 @@
   border-radius: 3px;
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
-  text-align: center; }
+  text-align: center;
+}
 
 .newsletterButton:hover {
   background: #007A43;
-  box-shadow: 0px 2px 5px 0px rgba(255, 255, 255, 0.25); }
+  box-shadow: 0px 2px 5px 0px rgba(255, 255, 255, 0.25);
+}
 
 #mc_embed_signup .mc-field-group .asterisk {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 #mailchimpSignUpPage h2 {
-  padding: 1em; }
+  padding: 1em;
+}
+
 #mailchimpSignUpPage .gform_title {
   color: #fff;
   padding: .5em;
@@ -83,14 +100,13 @@
 }
 
 /*-------This is for the Get Involved Section-*/
-/*#getInvolvedWidget h3 {*/
-/*color: white;*/
-/*padding: 1em;*/
-/*font-size: 1.5em;*/
-/*border-radius: 4px;*/
-/*border: none;*/
-/*width: 100%;*/
-/*margin: 2% auto; }*/
+//#getInvolvedWidget h3 {
+//color: white;
+//padding: 1em;
+//font-size: 1.5em;
+//border-radius: 4px;RCELogoSidebar
+//width: 100%;
+//margin: 2% auto; }
 
 /*------#getInvolvedWidget a {
     font-size: 1.15em;
@@ -98,7 +114,7 @@
 #getInvolvedWidget a:hover {
   text-decoration: none; }
 
-.getInvolvedWidgetChild {
+.sidebarAccordionWidgetChild {
   background: #53b1e5;
   border-radius: 3px;
   -webkit-transition: all .25s ease;
@@ -106,11 +122,11 @@
   width: 100%;
   margin: 2% auto; }
 
-.getInvolvedWidgetChild:hover {
+.sidebarAccordionWidgetChild:hover {
   background: #7AC6EF;
   box-shadow: 0px 2px 5px 0px #aaa; }
 
-.getInvolvedWidgetChild p {
+.sidebarAccordionWidgetChild p {
   padding: 1em;
   text-align: center;
   color: #fff;
@@ -181,35 +197,12 @@
     transition: all .25s ease;
     cursor: pointer;
 }----*/
-#footerNavigation h3:hover {
-  box-shadow: 0px 2px 5px 0px #aaa; }
 
-#footerNavigation ul {
-  list-style: none;
-  width: 100%; }
-
-#footerNavigation ul li {
-  background: #53b1e5;
-  -webkit-transition: background .25s ease;
-  transition: background .25s ease;
-  display: block;
-  margin: 2% 0;
-  border-radius: 3px; }
-
-#footerNavigation ul li:hover {
-  background: #7AC6EF;
-  box-shadow: 0px 2px 5px 0px #aaaaaa; }
-
-#footerNavigation ul li a {
-  display: block;
-  padding: 1em;
-  color: white;
-  text-align: center; }
-
-#footerNavigation ul li a:hover {
-  text-decoration: none; }
 
 .nav-close:before,
 .nav-home:before {
   line-height: 1 !important;
 }
+
+
+

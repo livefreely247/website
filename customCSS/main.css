@@ -59,13 +59,18 @@ main light blue = #53b1e5
   font-size: 1em;
   margin-left: .5em; }
 
-.contactInfomation {
+.contactInformation {
   width: 50%;
   margin: 0 auto;
   text-align: justify; }
 
 h3 {
   font-size: 2em; }
+
+/*----------------------------------------------------------This is for the sliders---*/
+/*---this removes the padding form the left side of the slider----*/
+.entry ul {
+  padding: 0; }
 
 /*--------fontIcons-*/
 @font-face {
@@ -78,6 +83,7 @@ h3 {
 .fa.floatRight {
   vertical-align: middle; }
 
+/*-----mixins---*/
 /*-----------------------------------------------------helper classes----*/
 a:link {
   text-decoration: none !important; }
@@ -690,7 +696,7 @@ a:active {
 .partnersMapCanvasParent {
   width: 90%; }
 
-/*-------------------------------------------#resourcePage--*/
+/*-------------------------------------------#resource Page--*/
 .page-id-11 {
   background: url("http://gpsen.org/wp-content/uploads/2015/08/resourcesPageBackground.jpg") no-repeat 0 0 fixed;
   background-size: cover; }
@@ -791,6 +797,7 @@ h3.gform_title .fa-chevron-down::before {
   background: url("http://gpsen.org/wp-content/uploads/2016/01/contactBackgroundOne.jpg") no-repeat 0 0 fixed;
   background-size: cover; }
 
+/*---------partnerPledgePage---------*/
 /*------------------------------------------widget areas-------*/
 /*---------widget sidebar--*/
 /*#largeWidgetButton a {*/
@@ -802,40 +809,46 @@ h3.gform_title .fa-chevron-down::before {
 /*!*---This is for the donate Section----*!*/
 /*#donateSidebarButton a:hover {*/
 /*text-decoration: none; }*/
-/*#donateSidebarButton h3 {*/
-/*background: #009653;*/
-/*-webkit-transition: all .25s ease;*/
-/*transition: all .25s ease;*/
-/*color: #fff;*/
-/*border: none;*/
-/*padding: 1em;*/
-/*text-align: center;*/
-/*width: 100%;*/
-/*margin: 1% auto;*/
-/*font-size: 1.5em;*/
-/*border-radius: 3px;*/
-/*box-shadow: inset 0px -1px 3px 0px rgba(255, 255, 255, 0.25); }*/
-/*#donateSidebarButton h3:hover {*/
-/*background: #18AE6A;*/
-/*box-shadow: 0px 2px 5px 0px #aaa; }*/
 .GPSENSidebar h3 {
-  /*border-bottom: none;*/
-  /*padding: .5em;*/
-  /*color: white;*/
-  /*text-align: center;*/
-  /*font-size: 1.5em;*/
-  /*width: 100%;*/
-  /*margin: 2% auto;*/ }
+  background: #3296CB;
+  border-bottom: none;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+  margin: 2% auto;
+  padding: 0 0 0 0; }
+
+.GPSENSidebar h3:hover {
+  background: #3296CB;
+  box-shadow: 0px 2px 5px 0px #aaa; }
+
+.GPSENSidebar h3:active {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5); }
+
+.GPSENSidebar h3 a {
+  color: white;
+  padding: 1em;
+  display: block; }
+
+.donateSidebarButton h3 {
+  background: #009653;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  color: #fff;
+  border: none;
+  text-align: center;
+  width: 100%;
+  margin: 1% auto;
+  font-size: 1.5em;
+  border-radius: 3px;
+  box-shadow: inset 0px -1px 3px 0px rgba(255, 255, 255, 0.25); }
+
+.donateSidebarButton h3:hover {
+  background: #18AE6A;
+  box-shadow: 0px 2px 5px 0px #aaa; }
 
 /*-for the newletter section for widget---*/
-/*#largeWidgetButton h3 {*/
-/*border-bottom: none;*/
-/*padding: 1em;*/
-/*color: white;*/
-/*text-align: center;*/
-/*font-size: 1.5em;*/
-/*width: 100%;*/
-/*margin: 2% auto; }*/
 .newsletterButton {
   background: #009653;
   padding: 1em;
@@ -866,21 +879,13 @@ h3.gform_title .fa-chevron-down::before {
   font-family: bitter; }
 
 /*-------This is for the Get Involved Section-*/
-/*#getInvolvedWidget h3 {*/
-/*color: white;*/
-/*padding: 1em;*/
-/*font-size: 1.5em;*/
-/*border-radius: 4px;*/
-/*border: none;*/
-/*width: 100%;*/
-/*margin: 2% auto; }*/
 /*------#getInvolvedWidget a {
     font-size: 1.15em;
 }---*/
 #getInvolvedWidget a:hover {
   text-decoration: none; }
 
-.getInvolvedWidgetChild {
+.sidebarAccordionWidgetChild {
   background: #53b1e5;
   border-radius: 3px;
   -webkit-transition: all .25s ease;
@@ -888,11 +893,11 @@ h3.gform_title .fa-chevron-down::before {
   width: 100%;
   margin: 2% auto; }
 
-.getInvolvedWidgetChild:hover {
+.sidebarAccordionWidgetChild:hover {
   background: #7AC6EF;
   box-shadow: 0px 2px 5px 0px #aaa; }
 
-.getInvolvedWidgetChild p {
+.sidebarAccordionWidgetChild p {
   padding: 1em;
   text-align: center;
   color: #fff;
@@ -961,34 +966,6 @@ h3.gform_title .fa-chevron-down::before {
     transition: all .25s ease;
     cursor: pointer;
 }----*/
-#footerNavigation h3:hover {
-  box-shadow: 0px 2px 5px 0px #aaa; }
-
-#footerNavigation ul {
-  list-style: none;
-  width: 100%; }
-
-#footerNavigation ul li {
-  background: #53b1e5;
-  -webkit-transition: background .25s ease;
-  transition: background .25s ease;
-  display: block;
-  margin: 2% 0;
-  border-radius: 3px; }
-
-#footerNavigation ul li:hover {
-  background: #7AC6EF;
-  box-shadow: 0px 2px 5px 0px #aaaaaa; }
-
-#footerNavigation ul li a {
-  display: block;
-  padding: 1em;
-  color: white;
-  text-align: center; }
-
-#footerNavigation ul li a:hover {
-  text-decoration: none; }
-
 .nav-close:before,
 .nav-home:before {
   line-height: 1 !important; }
@@ -1047,6 +1024,12 @@ h3.gform_title .fa-chevron-down::before {
 #footer #footerContact .whiteCard {
   padding-bottom: 10%; }
 
+#footer .contactInfomation {
+  text-align: center; }
+
+#footer .contactInfomation p {
+  text-align: center; }
+
 .footerSocialMediaLogin {
   width: 100%;
   margin: 10% 0 0 20%; }
@@ -1063,6 +1046,31 @@ h3.gform_title .fa-chevron-down::before {
   padding: 1.10em;
   font-size: inherit; }
 
+#footerNavigation h3:hover {
+  box-shadow: 0px 2px 5px 0px #aaa; }
+
+#footerNavigation ul {
+  list-style: none;
+  width: 100%; }
+
+#footerNavigation ul li {
+  background: #53b1e5;
+  -webkit-transition: background .25s ease;
+  transition: background .25s ease;
+  display: block;
+  margin: 2% 0;
+  border-radius: 3px; }
+
+#footerNavigation ul li:hover {
+  background: #7AC6EF;
+  box-shadow: 0px 2px 5px 0px #aaaaaa; }
+
+#footerNavigation ul li a {
+  display: block;
+  padding: 1em;
+  color: white;
+  text-align: center; }
+
 /*-----this is going to be the media quires-----*/
 @media screen and (max-width: 979px) {
   #footer #footerAboutUs {
@@ -1078,7 +1086,7 @@ h3.gform_title .fa-chevron-down::before {
     margin: 0 auto; } }
 /* ----------- iPad 3 and 4 ----------- */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+@media only screen and (min-device-width: 768px) {
   footer#footer > div {
     width: 100%; }
 

@@ -157,20 +157,20 @@ jQuery(document).ready(function($) {
 	}); // End resize
     // This is for the wideget area for the forms and other get involved links 
 	// This shows and hide the links area 
-	$('.getInvolvedContent').css('display', 'none');
-	$('#getInvolvedWidget h3').on('click', function() {
-		
-		if ($('.getInvolvedWidgetChild:first').is(':hidden')) {
-			$('.getInvolvedContent').slideDown('slow');
-    		$(this).find('span.floatRight').removeClass('fa-arrow-right').addClass('fa-arrow-down');
-    		
-    		$sidebar.addClass('getInvolvedClicked');
-  		} else {
-    		$('.getInvolvedContent').slideUp('slow');
-    		$(this).find('span.floatRight').removeClass('fa-arrow-down').addClass('fa-arrow-right');
-    		$sidebar.removeClass('getInvolvedClicked');
-  		}
-	});
+	// $('.getInvolvedContent').css('display', 'none');
+	// $('#getInvolvedWidget h3').on('click', function() {
+	//
+	// 	if ($('.getInvolvedWidgetChild:first').is(':hidden')) {
+	// 		$('.getInvolvedContent').slideDown('slow');
+    	// 	$(this).find('span.floatRight').removeClass('fa-arrow-right').addClass('fa-arrow-down');
+    	//
+    	// 	$sidebar.addClass('getInvolvedClicked');
+  	// 	} else {
+    	// 	$('.getInvolvedContent').slideUp('slow');
+    	// 	$(this).find('span.floatRight').removeClass('fa-arrow-down').addClass('fa-arrow-right');
+    	// 	$sidebar.removeClass('getInvolvedClicked');
+  	// 	}
+	// });
 	/// This is going to show the sign up for newsletter green button 
 	$('.newsletterContent').css('display', 'none');
 	$('#newletterWidget h3').on('click', function() {
@@ -286,7 +286,7 @@ jQuery(document).ready(function($) {
 		}); // end governanceAccordion
 	}
 	activateAccordion();
-	function addArrowsAccrdion() {
+	function addArrowsAccordion() {
 		var $accordionH3 = $('.accordion .accordionHeadersGrey');
 		if (siteHref != 'http://gpsen.org/resources/') {
 			$('<span class="fa fa-chevron-down floatRight"></span>').appendTo($accordionH3);
@@ -294,8 +294,10 @@ jQuery(document).ready(function($) {
 			$('<span class="fa fa-chevron-down floatRight"></span>').appendTo($accordionH3);
 		}
 	}
-	addArrowsAccrdion();
+	addArrowsAccordion();
 
+	// var activeAccordion = $(this).accordion('option', 'active');
+	// activeAccordion.("option", "collapsible", true);
 	var $accordionH3 = $('.accordion > h3');
 	$accordionH3.on('click', function() {
             /// THis is going to animate the span arrow of the h3's
@@ -318,11 +320,11 @@ jQuery(document).ready(function($) {
                     },
                     duration:'fast'
                 },'linear');
-                $accordionH2.addClass('ui-accordion-content-active');
+                $accordionH3.addClass('ui-accordion-content-active');
             }
 	}); // end $accordionH2
 
-    // GIS Student Dyan Marcus Google Map last edited by nomad on 6-5-2016
+    // GIS Student Dyan Marcus Google Map last edited by nomad on 7-14-2016
 	var map;
 	var layer_0;
 	var layer_1;
@@ -336,7 +338,7 @@ jQuery(document).ready(function($) {
 			query: {
 				select: "col2",
 				from: "1l4O3nrOYzUbPCrctBcpdKEU1ZQ2BYfrJnp1hdcXo",
-				where: "col5 = 'Current'"
+				where: " col5 = 'Current'"
 			},
 			map: map,
 			styleId: 5,
@@ -345,7 +347,7 @@ jQuery(document).ready(function($) {
 		layer_1 = new google.maps.FusionTablesLayer({
 			query: {
 				select: "col2",
-				from: "1jj0uL48tlojWlHtY-GghplB4oJFFsrRzmN3hYJHM"
+				from: "1WKFd0mkeEtjs9_hsknk24alf3LMBU17NtGdSQOfL"
 			},
 			map: map,
 			styleId: 2,

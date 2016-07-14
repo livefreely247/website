@@ -11,9 +11,10 @@
   #footer #footerContact {
     width: 90%;
     margin: 0 auto; } }
+
 /* ----------- iPad 3 and 4 ----------- */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+@media only screen and (min-device-width: 768px) {
   footer#footer > div {
     width: 100%;
   }
@@ -30,27 +31,32 @@
     color: #000;
   }
   .headerLogo {
-    width: 100%; }
+    width: 100%;
+  }
 
   .headerLogo > img {
     margin: 0 auto;
-    display: block; }
+    display: block;
+  }
 
   /*-Fixing the headerSocialMediaLogin position and size-*/
   .headerSocialMediaLogin {
     width: 100% !important;
     margin: 5% 0 auto;
-    display: block; }
+    display: block;
+  }
 
   .headerSocialMediaLogin ul li a {
     padding: 2em;
     background-size: 3em !important; }
 
   #footer #footerAboutUs {
-    width: 100%; }
+    width: 100%;
+  }
 
   #footer #footerNav {
-    width: 90%; }
+    width: 90%;
+  }
 
   #footer #footerContact {
     width: 100%;

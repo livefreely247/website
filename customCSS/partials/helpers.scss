@@ -73,7 +73,8 @@ a:active {
   border-radius: 3px;
   color: white;
   line-height: 1em !important;
-  box-shadow: inset 0px -1px 2px 0px rgba(255, 255, 255, 0.25); }
+  box-shadow: inset 0px -1px 2px 0px rgba(255, 255, 255, 0.25);
+}
 .blueHeaders a {
   color: white;
 }
@@ -169,11 +170,13 @@ a:active {
   background: #fff;
   border-radius: 3px;
   box-shadow: 0px 1px 3px 0px #aaa;
-  padding: 2%; }
+  padding: 2%;
+}
 
 .greySections {
   background: rgba(0, 0, 0, 0.15);
   padding: 1%;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 /*-----------end helper classes-*/
