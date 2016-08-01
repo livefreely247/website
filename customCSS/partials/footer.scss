@@ -52,23 +52,23 @@
 #footer #footerContact .whiteCard {
   padding-bottom: 10%;
 }
-#footer .contactInfomation {
+#footer .contactInformation {
+  text-align: center;
+  margin: 0 auto 5%;
+}
+#footer .contactInformation p {
   text-align: center;
 }
-#footer .contactInfomation p {
-  text-align: center;
-}
-.footerSocialMediaLogin {
-  width: 100%;
-  margin: 10% 0 0 20%; }
+.footerSocialMediaLogin {}
 
 .footerSocialMediaLogin ul {
-  float: left; }
+  text-align: center;
+}
 
 .footerSocialMediaLogin ul li {
-  float: left;
   margin: 0 0 0 5px;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .footerSocialMediaLogin ul li a {
   padding: 1.10em;

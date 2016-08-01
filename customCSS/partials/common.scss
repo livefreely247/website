@@ -8,9 +8,14 @@
 main light blue = #53b1e5
 -----*/
 /*----------------general styles----*/
+// fixing Kim addition
+body.custom-background {
+  -webkit-background-size: cover;
+  background-size: cover;
+}
 .entry p {
   font-size: 1em;
-  margin-left: .5em;
+  //margin-left: .5em;
 }
 
 .contactInformation {

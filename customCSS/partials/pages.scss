@@ -178,9 +178,14 @@
 .page-id-45 {
   background: url("http://gpsen.org/wp-content/uploads/2015/07/FAQBackground.jpg") no-repeat 0 0 fixed;
   background-size: cover; }
-
+#FQAPage {
+  ul.parentFAQUL {
+    margin: 0 0 0 6%;
+  }
+}
 #FAQAccordion {
-  margin-top: 10%; }
+  margin-top: 5%;
+}
 
 /*----#FAQAccordion > div {
     background: #EFEFEF;
@@ -299,6 +304,15 @@
 .sustainingPartners h2 a:hover {
   color: #fff;
 }
+.sustainingPartnersNew h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1em;
+  width: 65%;
+}
+.sustainingPartnersNew br {
+  display: none;
+}
 #partnersPage .fa-map-marker {
   float: right;
   font-size: .70em;
@@ -322,6 +336,13 @@
 }
 .partnersMapCanvasParent {
   width: 90%;
+}
+/*---------------------------------RCE Networks----*/
+#globalActionProgrammeOnESD {
+  ul {
+    list-style-type: none;
+    margin: 0 0 0 1.5%;
+  }
 }
 /*-------------------------------------------#resource Page--*/
 .page-id-11 {

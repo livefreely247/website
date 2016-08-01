@@ -71,15 +71,13 @@
                          <ul>
                               <li><a href="https://twitter.com/gpsenews" target="_blank" class="twitterIcon"></a></li>
                               <li><a href="https://www.facebook.com/RCE.GreaterPortland" target="_blank" class="facebookIcon"></a></li>
-
                               <li><a href="https://www.linkedin.com/company/greater-portland-sustainability-education-network" target="_blank" class="linkedInIcon"></a></li>
-
                               <li><a href="https://www.youtube.com/channel/UChB7TwwnSa6brrrw-xYKeSA" target="_blank" class="youTubeIcon"></a></li>
 
                          </ul>
-                        <!--google translate-->
+                         <!--google translate-->
                          <div id="google_translate_element"></div>
-            
+
                          <script type="text/javascript">
                               function googleTranslateElementInit() {
                                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-68540774-1'}, 'google_translate_element');

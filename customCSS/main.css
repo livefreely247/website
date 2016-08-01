@@ -673,6 +673,11 @@ a:active {
 .sustainingPartners h2 a:hover {
   color: #fff; }
 
+.sustainingPartnersNew h2 {
+  text-align: center;
+  font-size: 1em;
+  width: 65%; }
+
 #partnersPage .fa-map-marker {
   float: right;
   font-size: .70em;

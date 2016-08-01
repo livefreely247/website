@@ -37,7 +37,7 @@ $page_template = woo_get_page_template();
             $GPSEN_args = array(
                 'post_type'              => 'post',
                 'category_name'          => 'gpsen-events',
-                'order'                  => 'DESC',
+                'order'                  => 'ASC',
                 'orderby'                => 'menu_order',
                 'posts_per_page'         =>  '-1'
             );
@@ -64,7 +64,7 @@ $page_template = woo_get_page_template();
             $community_args = array(
                 'post_type'              => 'post',
                 'category_name'          => 'community-events',
-                'order'                  => 'DESC',
+                'order'                  => 'ASC',
                 'orderby'                => 'menu_order',
                 'posts_per_page'         =>  '-1'
             );
