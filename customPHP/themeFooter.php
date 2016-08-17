@@ -17,9 +17,9 @@
  */
 
 global $woo_options;
-woo_footer_top();
 
- 	woo_footer_before();
+woo_footer_top();
+woo_footer_before();
 
 ?>
 
@@ -27,7 +27,7 @@ woo_footer_top();
 		<?php woo_footer_inside(); ?>
 		
 		<div id="footerAboutUs" class="col-left">
-			<!--<?php woo_footer_left(); ?>---Removed By nomad 8_2_2015-->
+			<!--<?php woo_footer_left(); ?>---changed By nomad 8_2_2015-->
 			<h3 class="blueHeaders">GPSEN Facebook Feed</h3>
 			<div class="whiteCard">
 				<div class="fb-page" data-href="https://www.facebook.com/RCE.GreaterPortland/" data-tabs="timeline"
@@ -39,14 +39,15 @@ woo_footer_top();
 				</div>
 			</div>
 		</div>
+
 		<div class="col-left" id="footerNav">
 			<h3 class="blueHeaders">Quick Links</h3>
 			<div class="footerSiteMapDiv">
 				<?php dynamic_sidebar( 'footer_nav' ); ?>
 				<h3 class="liteBlueButton"><a href="http://gpsen.org/site-map/">Site Map</a></h3>
 			</div>
-					
 		</div>
+
 		<div id="footerContact" class="col-right">
 			<!--<?php woo_footer_right(); ?>--Removed By Nomad 8_2_2015-->
 			<h3 class="blueHeaders">Contact Us</h3>
@@ -79,16 +80,9 @@ woo_footer_top();
 
 
 	</div><!-- /#inner-wrapper -->
-
-
-
 </div><!-- /#wrapper -->
 
-
-
 <div class="fix"></div><!--/.fix-->
-
-
 
 <?php wp_footer(); ?>
 

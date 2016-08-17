@@ -324,37 +324,41 @@ jQuery(document).ready(function($) {
             }
 	}); // end $accordionH2
 
-    // GIS Student Dyan Marcus Google Map last edited by nomad on 7-14-2016
-	var map;
-	var layer_0;
-	var layer_1;
-	function initialize() {
-		map = new google.maps.Map(document.getElementById('map-canvas'), {
-			center: new google.maps.LatLng(45.41336442086554, -122.64342000585941),
-			zoom: 8,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		});
-		layer_0 = new google.maps.FusionTablesLayer({
-			query: {
-				select: "col2",
-				from: "1l4O3nrOYzUbPCrctBcpdKEU1ZQ2BYfrJnp1hdcXo",
-				where: " col5 = 'Current'"
-			},
-			map: map,
-			styleId: 5,
-			templateId: 7
-		});
-		layer_1 = new google.maps.FusionTablesLayer({
-			query: {
-				select: "col2",
-				from: "1WKFd0mkeEtjs9_hsknk24alf3LMBU17NtGdSQOfL"
-			},
-			map: map,
-			styleId: 2,
-			templateId: 2
-		});
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
+	// Check to see if client is on the partners page
+    if (siteHref === 'http://gpsen.org/partners/') {
+        // GIS Student Dyan Marcus Google Map last edited by nomad on 7-14-2016
+        var map;
+        var layer_0;
+        var layer_1;
+        function initializeMap() {
+            map = new google.maps.Map(document.getElementById('map-canvas'), {
+                center: new google.maps.LatLng(45.41336442086554, -122.64342000585941),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            layer_0 = new google.maps.FusionTablesLayer({
+                query: {
+                    select: "col2",
+                    from: "1l4O3nrOYzUbPCrctBcpdKEU1ZQ2BYfrJnp1hdcXo",
+                    where: " col5 = 'Current'"
+                },
+                map: map,
+                styleId: 5,
+                templateId: 7
+            });
+            layer_1 = new google.maps.FusionTablesLayer({
+                query: {
+                    select: "col2",
+                    from: "1WKFd0mkeEtjs9_hsknk24alf3LMBU17NtGdSQOfL"
+                },
+                map: map,
+                styleId: 2,
+                templateId: 2
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initializeMap);
+    }
+
 
 	/// Form pages
 	///Mail Chimp Form

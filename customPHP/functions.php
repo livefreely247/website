@@ -1,7 +1,5 @@
 <?php
 
-
-
 /*
 
 Add any custom functions to your child theme here
@@ -11,11 +9,6 @@ Add any custom functions to your child theme here
 // Move footer widgetized area inside footer container
 
 /*--add_action( 'init', 'woo_move_footer_widgets' );
-
-
-
-
-
 
 function woo_move_footer_widgets() {
 
