@@ -256,7 +256,9 @@
   border-top: none; }
 
 #partnersPage table td a {
-  color: #000; }
+  color: #000;
+  display: block;
+}
 
 #partnersPage table td a:hover {
   text-decoration: none; }
@@ -265,8 +267,24 @@
   background: #D6D6D6; }
 
 #partnersMapDiv {
-  margin: 0 0 4% 0; }
+  margin: 0 0 4% 0;
+}
+#partnersPage .fa-map-marker {
+  float: right;
+  font-size: .70em;
+  margin-top: 2%;
 
+}
+#partnersPage .fa-map-marker:before {
+  vertical-align: -webkit-super;
+  vertical-align: super;
+}
+#partnersPage .partnerMobileH2 {
+  display: none;
+}
+#partnersPage .partnersTableDiv > p {
+  display: none;
+}
 .partnerRedirectButton {
   transition: all .25s ease;
   box-shadow: inset 0px -1px 3px 0px rgba(255, 255, 255, 0.25);
@@ -301,6 +319,9 @@
   transform: translateY(60%);
   font-size: 1em;
 }
+.sustainingPartners h2 a {
+  display: block;
+}
 .sustainingPartners h2 a:hover {
   color: #fff;
 }
@@ -313,22 +334,7 @@
 .sustainingPartnersNew br {
   display: none;
 }
-#partnersPage .fa-map-marker {
-  float: right;
-  font-size: .70em;
-  margin-top: 2%;
 
-}
-#partnersPage .fa-map-marker:before {
-  vertical-align: -webkit-super;
-  vertical-align: super;
-}
-#partnersPage .partnerMobileH2{
-  display: none;
-}
-#partnersPage .partnersTableDiv > p {
-  display: none;
-}
 /*---Google map--*/
 #map-canvas {
   width:600px;
