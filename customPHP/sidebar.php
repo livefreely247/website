@@ -1,29 +1,20 @@
 <?php
 
 /**
-
- * Sidebar Template
-
- *
-
- * If a `primary` widget area is active and has widgets, display the sidebar.
-
- *
-
- * @package WooFramework
-
- * @subpackage Template
-
- */
-
-
+* Sidebar Template
+* @author Keith Murphy - nomad @nomadmystics@gmail.com && WooThemes
+* @summary If a `primary` widget area is active and has widgets, display the sidebar. - WooThemes message
+*
+* @package WooFramework
+* @subpackage Template
+*/
 
 global $post, $wp_query, $woo_options;
-$settings = array(
 
-				'portfolio_layout' => 'one-col'
+$settings = [
+	'portfolio_layout' => 'one-col'
+];
 
-				);
 $settings = woo_get_dynamic_values( $settings );
 
 // Reset Main Query
@@ -36,7 +27,9 @@ $layout = woo_get_layout();
 
 if ( is_tax( 'portfolio-gallery' ) || is_post_type_archive( 'portfolio' ) ) {
 
-	if ( '' != $settings['portfolio_layout'] ) { $layout = $settings['portfolio_layout']; }
+	if ( '' != $settings['portfolio_layout'] ) {
+		$layout = $settings['portfolio_layout'];
+	}
 
 }
 
@@ -48,6 +41,7 @@ if ( 'one-col' != $layout ) {
 
 ?>
 
+<!--Added for CSS nomad -->
 <aside id="sidebar" class="whiteCard">
 
     <?php
@@ -61,7 +55,7 @@ if ( 'one-col' != $layout ) {
 </aside><!-- /#sidebar -->
 
     <?php
-        woo_sidebar_after();
+    	woo_sidebar_after();
 
 	}
 

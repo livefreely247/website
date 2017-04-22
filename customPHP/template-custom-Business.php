@@ -1,14 +1,15 @@
 <?php
 
 /**
- * Template Name: Home-Business
- *
- * The business page template displays your posts with a "business"-style
- * content slider at the top.
- *
- * @package WooFramework
- * @subpackage Template
- */
+* Template Name: Home-Business
+* @author WooThemes
+*
+* @summary The business page template displays your posts with a "business"-style content slider at the top. - WooThemes message
+* @summary Changed the name for this template to overwrite WooThemes - nomad
+*
+* @package WooFramework
+* @subpackage Template
+*/
 
 global $woo_options, $wp_query;
 
@@ -17,30 +18,56 @@ get_header();
 $page_template = woo_get_page_template();
 
 ?>
-    <!-- #content Starts -->
+
+<!-- #content Starts -->
 
 <?php woo_content_before(); ?>
 
-<?php if ( ( isset( $woo_options['woo_slider_biz'] ) && 'true' == $woo_options['woo_slider_biz'] ) && ( isset( $woo_options['woo_slider_biz_full'] ) && 'true' == $woo_options['woo_slider_biz_full'] ) ) { $saved = $wp_query; woo_slider_biz(); $wp_query = $saved; } ?>
+<?php
+if ( ( isset( $woo_options['woo_slider_biz'] ) && 'true' == $woo_options['woo_slider_biz'] ) && ( isset( $woo_options['woo_slider_biz_full'] ) && 'true' == $woo_options['woo_slider_biz_full'] ) ) {
+
+    $saved = $wp_query; woo_slider_biz();
+
+    $wp_query = $saved;
+
+}
+?>
 
     <div id="content" class="col-full business">
     	<div id="main-sidebar-container">
+
             <!-- #main Starts -->
 
             <?php woo_main_before(); ?>
 
-            <?php if ( ( isset( $woo_options['woo_slider_biz'] ) && 'true' == $woo_options['woo_slider_biz'] ) && ( isset( $woo_options['woo_slider_biz_full'] ) && 'false' == $woo_options['woo_slider_biz_full'] ) ) { $saved = $wp_query; woo_slider_biz(); $wp_query = $saved; } ?>
+            <?php
+            if ( ( isset( $woo_options['woo_slider_biz'] ) && 'true' == $woo_options['woo_slider_biz'] ) && ( isset( $woo_options['woo_slider_biz_full'] ) && 'false' == $woo_options['woo_slider_biz_full'] ) ) {
+
+                $saved = $wp_query;
+
+                woo_slider_biz();
+
+                $wp_query = $saved;
+
+            }
+            ?>
 
             <section id="main">
                 <?php
-
                 woo_loop_before();
 
-                if ( have_posts() ) { $count = 0;
+                if ( have_posts() ) {
 
-                    while ( have_posts() ) { the_post(); $count++;
+                    $count = 0;
 
-                        woo_get_template_part( 'content', 'page-template-business' ); // Get the page content template file, contextually.
+                    while ( have_posts() ) {
+
+                        the_post();
+
+                        $count++;
+
+                        // Get the page content template file, contextually.
+                        woo_get_template_part( 'content', 'page-template-business' );
 
                     }
 
